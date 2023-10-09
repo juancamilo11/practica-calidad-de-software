@@ -1,0 +1,40 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.example</groupId>
+    <artifactId>practica-01-analisis-codigo</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <name>Archetype - practica-01-analisis-codigo</name>
+    <url>http://maven.apache.org</url>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>15</source>
+                    <target>15</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>3.8.0.2131</version>
+                <executions>
+                    <execution>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sonar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <sonar.host.url>http://localhost:9000</sonar.host.url>
+                    <sonar.projectKey>practica-01-analisis-codigo</sonar.projectKey>
+                    <sonar.projectName>practica-01-analisis-codigo</sonar.projectName>
+                    <sonar.token>sqa_5beaee52ff59ec84d6298b44c040a3f649b5a31b</sonar.token>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

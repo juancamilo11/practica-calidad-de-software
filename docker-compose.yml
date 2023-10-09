@@ -22,4 +22,3 @@ services:
     volumes:
       - ./sonarqube_data:/var/sonarqube/data
 
-  # test-app:

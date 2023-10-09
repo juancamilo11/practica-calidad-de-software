@@ -1,11 +1,11 @@
-package models;
+package co.edu.udea.calidadsoftware.models;
 
 import java.time.LocalDateTime;
 
 public class Task {
-    public String id;
-    public String desc;
-    public LocalDateTime completedAt;
+    private final String id;
+    private final String desc;
+    private LocalDateTime completedAt;
 
     public Task(String id, String desc) {
         this.id = id;
@@ -17,16 +17,8 @@ public class Task {
         return id;
     }
 
-    public void setId(String id) {
-        this.id = id;
-    }
-
     public String getDesc() {
         return desc;
-    }
-
-    public void setDesc(String desc) {
-        this.desc = desc;
     }
 
     public LocalDateTime getCompletedAt() {

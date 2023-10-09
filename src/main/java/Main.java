@@ -1,7 +1,5 @@
-package app;
-
-import app.helpers.MainMenu;
-import app.models.ToDoManagement;
+import helpers.MainMenu;
+import models.ToDoManagement;
 
 public class Main {
     public static void main(String[] args) {
